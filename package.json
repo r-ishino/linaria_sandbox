@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "build": "node esbuild.mjs",
-    "build:type": "tsc -d -p tsconfig.build.json"
+    "build:type": "tsc -d -p tsconfig.build.json",
+    "build:plugin": "esbuild --bundle --format=esm --platform=node --outfile=custom-wyw.js custom-esbuild-wyw.ts",
+    "build:samplew": "esbuild --bundle --format=esm --platform=node --outfile=custom-sample.js custom-esbuild-sample.ts --watch"
   },
   "type": "module",
   "files": [
@@ -22,15 +24,22 @@
     "./lib/index.css": "./lib/index.css"
   },
   "dependencies": {
-    "@linaria/core": "^6.2.0",
-    "@linaria/react": "^6.2.1",
-    "@wyw-in-js/babel-preset": "^0.5.4",
     "react": "^18.3.1"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.26.0",
+    "@linaria/core": "^6.2.0",
+    "@linaria/react": "^6.2.1",
+    "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",
+    "@wyw-in-js/babel-preset": "^0.5.4",
+    "@wyw-in-js/esbuild": "^0.5.4",
+    "@wyw-in-js/transform": "^0.5.4",
     "esbuild": "^0.24.0",
+    "globby": "^14.0.2",
     "prettier": "^3.3.3",
-    "typescript": "^5.6.3"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "yarn": "^1.22.22"
   }
 }
