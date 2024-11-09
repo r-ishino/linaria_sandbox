@@ -1,0 +1,36 @@
+{
+  "name": "linaria_sandbox",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:r-ishino/linaria_sandbox.git",
+  "author": "r-ishino <r.ishino0413@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "build:type": "tsc -d -p tsconfig.build.json"
+  },
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./lib/index.d.ts",
+      "module": "./lib/index.js"
+    },
+    "./lib/index.css": "./lib/index.css"
+  },
+  "dependencies": {
+    "@linaria/core": "^6.2.0",
+    "@linaria/react": "^6.2.1",
+    "@wyw-in-js/babel-preset": "^0.5.4",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "esbuild": "^0.24.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  }
+}
