@@ -6,7 +6,8 @@
   "author": "r-ishino <r.ishino0413@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "node esbuild.mjs",
+    "build": "rollup -c",
+    "build:esbuild": "node esbuild.mjs",
     "build:type": "tsc -d -p tsconfig.build.json",
     "build:plugin": "esbuild --bundle --format=esm --platform=node --outfile=custom-wyw.js custom-esbuild-wyw.ts",
     "build:samplew": "esbuild --bundle --format=esm --platform=node --outfile=custom-sample.js custom-esbuild-sample.ts --watch"
@@ -27,7 +28,9 @@
     "react": "^18.3.1"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.25.9",
     "@babel/preset-typescript": "^7.26.0",
+    "@linaria/babel-preset": "^5.0.4",
     "@linaria/core": "^6.2.0",
     "@linaria/react": "^6.2.1",
     "@types/node": "^22.9.0",
