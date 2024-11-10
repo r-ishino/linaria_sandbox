@@ -1,7 +1,5 @@
 import esbuild from 'esbuild';
-// import wyw from '@wyw-in-js/esbuild';
 import { globbySync } from 'globby';
-// import { customEsbuildSample } from './custom-esbuild-sample.ts';
 import wyw from './esbuild-wyw.mjs';
 import { readFileSync, rm } from 'fs';
 import { existsSync } from 'node:fs';
@@ -49,12 +47,5 @@ await esbuild.build({
       debug: true,
       sourceMap: true
     })
-    // customEsbuildSample(),
-    // wyw({
-    //   filter: /\.(js|jsx|ts|tsx)$/,
-    //   sourceMap: false,
-    //   debug: true
-    // })
   ]
-  // sourcemap: true
 });

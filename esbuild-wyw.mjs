@@ -87,11 +87,9 @@ export default function wywInJS({
         let { cssText } = result;
         const slug = slugify(cssText);
         const cssFilename = `${filename}_${slug}.wyw.css`;
-        // let contents = `import ${JSON.stringify(cssFilename)}; ${result.code}`;
-        let contents = result.code;
         cssLookup.set(cssFilename, cssText);
         return {
-          contents,
+          contents: result.code,
           loader,
           resolveDir: dirname(args.path)
         };
