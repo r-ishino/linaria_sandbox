@@ -6,9 +6,6 @@ import { existsSync } from 'node:fs';
 
 const entryPoints = globbySync('src/**/*.{ts,tsx}');
 
-const rawJson = readFileSync('./package.json', 'utf-8');
-const pkg = JSON.parse(rawJson);
-
 if (existsSync('./lib')) {
   rm(
     './lib',
@@ -23,20 +20,9 @@ if (existsSync('./lib')) {
   );
 }
 
-const bundle = false;
-const options = bundle
-  ? {
-      bundle: true,
-      entryPoints: ['src/index.ts'],
-      external: ['react', 'react-dom', ...Object.keys(pkg.devDependencies)]
-    }
-  : {
-      bundle: false,
-      entryPoints
-    };
-
 await esbuild.build({
-  ...options,
+  bundle: false,
+  entryPoints,
   format: 'esm',
   outdir: './lib',
   platform: 'browser',
