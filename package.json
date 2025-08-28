@@ -22,25 +22,25 @@
     "./lib/index.css": "./lib/index.css"
   },
   "dependencies": {
-    "react": "^19.0.0"
+    "react": "^19.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "@babel/preset-typescript": "^7.26.0",
+    "@babel/core": "^7.28.3",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
     "@linaria/babel-preset": "^5.0.4",
-    "@linaria/core": "^6.2.0",
-    "@linaria/react": "^6.2.1",
-    "@types/node": "^22.10.2",
-    "@types/react": "^19.0.2",
-    "@wyw-in-js/babel-preset": "^0.5.5",
-    "@wyw-in-js/esbuild": "^0.5.5",
-    "@wyw-in-js/transform": "^0.5.5",
-    "esbuild": "^0.24.2",
-    "globby": "^14.0.2",
-    "prettier": "^3.4.2",
+    "@linaria/core": "^6.3.0",
+    "@linaria/react": "^6.3.0",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.12",
+    "@wyw-in-js/babel-preset": "^0.7.0",
+    "@wyw-in-js/esbuild": "^0.7.0",
+    "@wyw-in-js/transform": "^0.7.0",
+    "esbuild": "^0.25.9",
+    "globby": "^14.1.0",
+    "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2",
+    "typescript": "^5.9.2",
     "yarn": "^1.22.22"
   }
 }
