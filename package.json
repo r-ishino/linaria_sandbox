@@ -22,7 +22,7 @@
     "./lib/index.css": "./lib/index.css"
   },
   "dependencies": {
-    "react": "^19.2.0"
+    "react": "^19.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
@@ -31,14 +31,14 @@
     "@linaria/babel-preset": "^5.0.4",
     "@linaria/core": "^6.3.0",
     "@linaria/react": "^6.3.0",
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
-    "@wyw-in-js/babel-preset": "^0.7.0",
-    "@wyw-in-js/esbuild": "^0.7.0",
-    "@wyw-in-js/transform": "^0.7.0",
-    "esbuild": "^0.27.0",
-    "globby": "^16.0.0",
-    "prettier": "^3.6.2",
+    "@wyw-in-js/babel-preset": "^0.8.1",
+    "@wyw-in-js/esbuild": "^0.8.1",
+    "@wyw-in-js/transform": "^0.8.1",
+    "esbuild": "^0.27.2",
+    "globby": "^16.1.0",
+    "prettier": "^3.7.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "yarn": "^1.22.22"
